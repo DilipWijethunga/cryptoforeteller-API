@@ -973,7 +973,7 @@ def get_coin_csv(coin):
             sentiment_data = x['sentiment']
             sentiment_data_score = x['sentiment_score']
         except:
-            sentiment_data = "default"
+            sentiment_data = None
             sentiment_data_score = None
 
         listing = [x['date_time'], x['currency'],
